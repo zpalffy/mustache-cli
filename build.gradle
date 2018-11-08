@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "com.eric.MustacheTransform"
+
+repositories {
+    jcenter()
+    mavenLocal()
+//    mavenCentral()
+}
+
+dependencies {
+    compile 'com.eric:cli:0.2'
+    compile 'com.github.spullara.mustache.java:compiler:0.9.5'
+    compile 'commons-io:commons-io:2.6'
+    
+
+    //compile 'com.google.code.gson:gson:2.3.1'
+    //compile 'com.google.guava:guava:19.0'
+    //testCompile 'junit:junit:4.12'
+}
